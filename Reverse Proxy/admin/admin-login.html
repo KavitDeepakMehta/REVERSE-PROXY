@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <ul class="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../customer/customer-login.html">Employee Login</a></li>
+        <li><a href="admin-login.html">Admin Login</a></li>
+    </ul>
+
+    <!-- Admin Login Form -->
+    <div class="admin-login">
+        <h2>Admin Login</h2>
+        <form id="adminLoginForm">
+            <label for="adminEmail">Email:</label>
+            <input type="email" id="adminEmail" placeholder="Enter your email" required>
+
+            <label for="adminPassword">Password:</label>
+            <input type="password" id="adminPassword" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="extra-options">
+            <button onclick="window.location.href='admin-register.html'">Register (New Admin)</button>
+            <button onclick="window.location.href='admin-forgot-password.html'">Forgot Password</button>
+        </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+
+</html>

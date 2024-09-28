@@ -1,0 +1,125 @@
+/* General Body Styling */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Employee Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0066cc;
+    padding: 15px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.navbar li a:hover {
+    background-color: #3385ff;
+    border-radius: 5px;
+}
+
+
+/* Employee Login Form Styling */
+
+.employee-login {
+    background-color: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.employee-login h2 {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.employee-login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-login label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.employee-login input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.employee-login button {
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.employee-login button:hover {
+    background-color: #3385ff;
+}
+
+
+/* Employee Dashboard */
+
+.employee-dashboard {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.employee-dashboard h1 {
+    font-size: 2.5em;
+    color: #0066cc;
+}
+
+
+/* Add this to the existing CSS file */
+
+.extra-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Adds spacing above the options */
+}
+
+.extra-options button {
+    margin: 10px 0;
+    /* Adds space between buttons */
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    /* Set width for consistency */
+}
+
+.extra-options button:hover {
+    background-color: #3385ff;
+    /* Button hover effect */
+}
