@@ -82,37 +82,37 @@ Permissions (Bucket Policy):
 
 4. Install Nginx, AWS CLI and Pull Files from S3 to EC2
 •	SSH into your EC2 instance and run the following commands:
-
-  	sudo apt update -y                 # Update the package lists for available updates
+```
+  	sudo apt update -y                 # Update the package lists for available updates
   
-  	sudo apt install curl unzip -y     # Install curl (for downloading files) and unzip (for extracting zip files)
+  	sudo apt install curl unzip -y     # Install curl (for downloading files) and unzip (for extracting zip files)
   
-  	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"  
+  	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"  
   
-  	unzip awscliv2.zip                 # Unzip the downloaded AWS CLI v2 file
+  	unzip awscliv2.zip                 # Unzip the downloaded AWS CLI v2 file
   
-  	sudo ./aws/install                 # Install the AWS CLI v2 from the unzipped directory
+  	sudo ./aws/install                 # Install the AWS CLI v2 from the unzipped directory
   
-  	aws --version                      # Verify the installed version of AWS CLI
+  	aws --version                      # Verify the installed version of AWS CLI
   
-  	sudo apt install nginx -y          # Install Nginx web server
+  	sudo apt install nginx -y          # Install Nginx web server
   
-  	sudo service nginx start           # Start the Nginx web server
+  	sudo service nginx start           # Start the Nginx web server
   
-  	sudo service nginx enable          # Enable Nginx to start automatically on boot
+  	sudo service nginx enable          # Enable Nginx to start automatically on boot
   
-  	sudo service nginx status          # Check the status of the Nginx service to ensure it's running
+  	sudo service nginx status          # Check the status of the Nginx service to ensure it's running
   
-  	cd /var/www/html                   # Navigate to the default web root directory for Nginx
+  	cd /var/www/html                   # Navigate to the default web root directory for Nginx
   
-  	sudo rm index.nginx-debian.html    # Remove the default Nginx placeholder page
+  	sudo rm index.nginx-debian.html    # Remove the default Nginx placeholder page
   
-  	aws s3 cp s3://kdmwebsite/Reverse\ Proxy/ /var/www/html --recursive  # Copy files from the S3 bucket to the Nginx web directory (replace with your own S3 URI)
+  	aws s3 cp s3://kdmwebsite/Reverse\ Proxy/ /var/www/html --recursive  # Copy files from the S3 bucket to the Nginx web directory (replace with your own S3 URI)
   
-  	cd /etc/nginx/sites-enabled        # Navigate to the Nginx configuration directory for enabled sites
+  	cd /etc/nginx/sites-enabled        # Navigate to the Nginx configuration directory for enabled sites
   
-  	sudo nano default                  # Open the default site configuration file in nano editor
-
+  	sudo nano default                  # Open the default site configuration file in nano editor
+```
 In the Nginx configuration file (default), add the following configuration:
 
 # Add the following inside the server block
